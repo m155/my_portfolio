@@ -8,8 +8,8 @@ def index(request):
 	categories = Category.objects.values().all()
 	print('Here i am')
 	print(categories[0]['image'])
-	print("stupid anis")
-	
+
+
 	return render(request, 'categories/index.html', {'categories':categories})
 
 def detail(request, category_id):
